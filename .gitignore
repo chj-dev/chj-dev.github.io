@@ -19,8 +19,6 @@ package-lock.json
 
 # Misc
 *.map
-sw.min.js
-assets/js/dist
 
 # Mac file
 .DS_Store
