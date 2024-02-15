@@ -1,6 +1,6 @@
 ---
 title: 깃허브 블로그 생성과 오류 해결
-date: 2024-02-15 11:03:00 +0900
+date: 2024-02-15 11:25:00 +0900
 categories: [Github Blog, Setting]
 tags: [git, github, jekyll, chirpy, theme]
 pin: true
