@@ -12,7 +12,8 @@ image:
   alt: 특정 시간(02시)에 치솟은 힙 메모리 제니퍼 화면. 빨간색- 힙 메모리 크기, 파란색- 힙 메모리 사용량 
 ---
 
-> 개발서버가 계속 죽었다. 불가피하게 개발서버에도 돌아가고 있는 배치가 있었는데, 해당 배치 시간마다 문제가 발생하여 작업이 계속 제대로 처리되지 않았다.   
+> 개발서버가 계속 죽었다.    
+> 불가피하게 개발서버에도 돌아가고 있는 배치가 있었는데, 해당 배치 시간마다 문제가 발생하여 작업이 계속 제대로 처리되지 않았다.   
 > 해당 배치는 30만 건이 넘는 데이터를 DB에서 조회하여 레디스에 put하는 배치인데, 일배치여서 서버가 계속 좀비상태(STW?)로 되는 문제가 있었다.   
 > 그런데 마침 얼마 전에 로컬에서 테스트를 하면서 비슷한 오류가 발생했다.   
 > 약 25만 건의 데이터를 DB에서 조회하는 쿼리를 작성했는데, 시간이 걸리다가 OOME: java heap space 오류가 발생했다.
@@ -73,7 +74,7 @@ Java에서는 개발자가 메모리 관리를 하지 않도록 GC 기능을 제
 GC의 Heap 영역에는 young generation, old generation, permanent generation 이 존재한다.    
 영역 별로 GC를 진행한다.
 
-> young generation
+**young generation**
 
 young 영역의 내부는 또 Eden, Survivor1, Survivor2 로 나뉜다.
 1. Eden   
@@ -85,7 +86,7 @@ GC 후에 해제되지 않고 Old에 가지 않은, *Minor GC에서 살아남은
 young 영역의 GC 작업.   
 처리 시간이 짧고, Eden 영역이 가득차면 발생한다. 특정 횟수 이상 GC 대상이 되면 old 영역으로 이동한다.
 
-> old generation
+**old generation**
 
 young 영역에서 저장되었던 객체 중 오래된 객체가 이동하여 저장되는 영역이다.   
 이 영역에서 *Major GC가 발생한다.
@@ -94,14 +95,14 @@ young 영역에서 저장되었던 객체 중 오래된 객체가 이동하여 �
 old 영역과 young 영역의 GC 작업. Full GC 라고도 한다.   
 old 영역이 가득차면 발생한다.  
 
-> permanent generation
+**permanent generation**
 
 Class loader에 의해 로드되는 class, method 등의 메타데이터가 저장되는 영역이다.
 
 ## STW (stop-the-world)
 <hr/>
 
-GC를 실행하는 스레드를 제외한 나머지 스레드가 멈추는 것이다. 
+GC를 실행하는 스레드를 제외한 나머지 스레드가 멈추는 것이다.   
 GC 작업이 완료된 이후에 작업을 다시 시작하기 때문에, STW가 발생하는 동안은 애플리케이션이 중지 되어 장애로 이어질 수 있다.
 
 ## 참고자료
