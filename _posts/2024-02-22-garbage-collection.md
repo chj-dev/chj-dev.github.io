@@ -1,6 +1,7 @@
 ---
 title: OOME와 GC
-date: 2024-02-22 23:25:00 +0900
+date: 2024-02-23 17:59:00 +0900
+last_modified_at: 2024-02-24 12:30:00 +0900
 categories: [Java, Thoery]
 tags: [gc, java, garbagecollection, thoery]
 pin: true
@@ -108,6 +109,6 @@ GC 작업이 완료된 이후에 작업을 다시 시작하기 때문에, STW가
 ## 참고자료
 <hr/>
 
-https://steady-coding.tistory.com/584
-http://www.chlux.co.kr/bbs/board.php?bo_table=board02&wr_id=110&page=8
-https://www.devkuma.com/docs/jvm/garbage-collection/
+<https://steady-coding.tistory.com/584>   
+<http://www.chlux.co.kr/bbs/board.php?bo_table=board02&wr_id=110&page=8>   
+<https://www.devkuma.com/docs/jvm/garbage-collection/>
