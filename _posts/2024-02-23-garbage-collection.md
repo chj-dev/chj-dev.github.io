@@ -2,8 +2,8 @@
 title: OOME와 GC
 date: 2024-02-23 17:59:00 +0900
 last_modified_at: 2024-02-24 12:30:00 +0900
-categories: [Java, Thoery]
-tags: [gc, java, garbagecollection, thoery]
+categories: [Java, Theory]
+tags: [gc, java, garbagecollection, theory]
 pin: true
 math: false
 mermaid: false
