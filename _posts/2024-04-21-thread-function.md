@@ -1,12 +1,18 @@
 ---
 title: 스레드 기본 API
 date: 2024-04-23 20:37:00 +0900
+last_modified_at: 2024-04-24 23:10:00 +0900
 categories: [Java, Theory]
 tags: [java, theory, thread]
 pin: true
 ---
 
 > 작성중..
+
+## 스터디 git 주소
+<hr/>
+
+- https://github.com/chj-dev/Study_Concurrency
 
 
 ## 섹션 2
@@ -42,7 +48,7 @@ Q 3. 네이티브 메서드?
 - 이전 강의에서도 나왔는데 헷갈림...
 - JAVA Native Method (JNI)
 - 네이티브 메서드란 C나 C++ 같은 네이티브 프로그래밍 언어로 작성한 메서드.
-- 시스템 콜로 들어가서 커널모드에서 운영체제 내에서 수행?
+- 시스템 콜로 들어가서 커널모드에서 운영체제 내에서 수행하는 메서드. (가려진 메서드?)
 - https://escapefromcoding.tistory.com/232
 
 ### 2강, join()
