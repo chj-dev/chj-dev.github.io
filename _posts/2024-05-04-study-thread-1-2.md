@@ -1,7 +1,7 @@
 ---
 title: 2 스레드 생성 및 실행구조
 date: 2024-05-04 12:45:00 +0900
-last_modified_at: 2024-05-15 13:56:00 +0900
+last_modified_at: 2024-05-15 14:44:00 +0900
 categories: [Study, Thread]
 tags: [study, java, thread]
 pin: true
@@ -80,7 +80,7 @@ pin: true
 2. 데몬 스레드(Daemon Thread)?
 
 
-### 3강, 스레드 생명주기와 상태
+### 4강, 스레드 생명주기와 상태
 
 **정리.**
 
@@ -99,10 +99,8 @@ pin: true
 - 5) 일시 정지 / BLOCKED: 모니터 락(Lock)이 해제될 때까지 기다리며 차단된 스레드 상태   
 - 6) 종료 / TERMINATED: 실행이 완료된 스레드 상태
 
-3. 스레드 생명주기```
+3. 스레드 생명주기
 : 강의 PDF 52~69 참고. 추후 정리
-
-
 
 **질문.**
 
