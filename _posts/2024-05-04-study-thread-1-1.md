@@ -1,5 +1,5 @@
 ---
-title: 운영체제 기본
+title: 1 운영체제 기본
 date: 2024-05-04 12:45:00 +0900
 categories: [Study, Thread]
 tags: [study, java, thread]
@@ -38,6 +38,7 @@ pin: true
 
 **질문.**   
 1. 높은 주소/낮은 주소?
+2. 높고 낮음을 구분해 놓은 이유? 그냥 각각 동적으로 계속 메모리 주소를 차지하려고?
 
 
 ### 2강, Parallel & Concurrent
