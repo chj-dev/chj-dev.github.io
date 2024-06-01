@@ -31,11 +31,11 @@ pin: true
 : 1) Thread 클래스 상속   
 - 작업 내용을 스레드 내부에 직접 재정의  
 - 컴파일 시점에 실행코드가 결정되어 동적인 기능 변경이 불가능   
-- *chapter02 > ThreadPattern 01~02 참고*
+- *study git: chapter02 > ThreadPattern 01~02 참고*
 : 2) Runnable 인터페이스 구현   
 - 작업 내용을 Runnable 에 정의하여 스레드에 전달   
 - 스레드와 실행하고자 하는 작업내용을 분리함으로써 유연하고 확장 가능한 구조로 구현 가능   
-- *chapter02 > ThreadPattern 03~05 참고*
+- *study git: chapter02 > ThreadPattern 03~05 참고*
 
 
 ### 2강, 스레드 실행 및 종료
