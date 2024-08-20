@@ -56,6 +56,7 @@ public static void main(String[] args) {
 }
 ```
 - main 에서 run() 을 바로 호출하는 게 아닌, start() 를 호출한다.
+
 > run() 을 바로 호출하면, CounterThread 스레드가 코드를 실행하는 것이 아닌, 
 > main 스레드가 CounterThread 클래스의 메서드를 호출하는 것이 되어버린다. 
 > 하지만 start() 를 호출하면 CounterThread 스레드가 run() 메서드 내의 코드를 실행한다.
@@ -66,9 +67,12 @@ public static void main(String[] args) {
 - 스레드에 이름을 부여하지 않으면 기본 스레드의 이름은 Thread-0, Thread-1, ... 이다.
 - main 클래스의 스레드는 main 이란 이름을 가지고 있다.
 - 스레드는 실행 순서를 보장하지 않는다.
+
 > main 클래스에서 호출한 스레드가 main 클래스 종료 전에 실행될 수도 있고, main 클래스 종료 후에 실행될 수도 있다.
 {: .prompt-info }
+
 - main 스레드는 기본적으로 호출한 스레드의 종료를 기다리지 않는다.
+
 > 기다리고 싶을 경우 join() 을 사용해야 한다!
 {: .prompt-info }
 
