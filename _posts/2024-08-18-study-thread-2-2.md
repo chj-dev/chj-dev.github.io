@@ -10,7 +10,7 @@ pin: true
 ## 스터디 git 주소
 <hr />
 
-- https://github.com/chj-dev/java-adv1
+- <https://github.com/chj-dev/java-adv1>
 - src/chjTest/start 하위 참조
 
 ## 스레드 생성과 실행

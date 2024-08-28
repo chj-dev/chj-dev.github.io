@@ -1,6 +1,7 @@
 ---
 title: 3 스레드 제어와 생명 주기 - 1
 date: 2024-08-27 23:11:00 +0900
+last_modified_at: 2024-08-28 23:33:00 +0900
 categories: [Study, Java-advanced1]
 tags: [study, java, thread, adv1]
 pin: true
@@ -9,7 +10,7 @@ pin: true
 ## 스터디 git 주소
 <hr />
 
-- https://github.com/chj-dev/java-adv1
+- <https://github.com/chj-dev/java-adv1>
 - src/chjTest/join 하위 참조
 
 ## 스레드 제어와 생명 주기 - 1
@@ -62,3 +63,44 @@ pin: true
 {: .prompt-warning }
 
 ## sleep 과 join
+
+### 기다려, 하지만 누가? 어떻게? 얼마나?
+
+- `sleep` 과 `join` 둘 다 사용 시 스레드가 **기다리는** 상태를 가진다. 하지만 이때 **누가 어떻게** 기다리는지에 따라 사용하는 메서드가 다르다.
+
+### sleep?
+
+```java
+Thread.sleep(1000);
+```
+- 위와 같이 사용하여, **`sleep` 을 호출한 스레드**가 1초 만큼 기다리는 상태가 된다.
+- 기다리는 상태이지만, 일정 시간 동안만 기다리는 **TIME_WAITING** 상태이다.
+
+### join?
+
+```java
+public static void main(String[] args)  {
+  Thread t1 = new Thread(new MyTask(), "t1");
+  t1.start();
+  t1.join();
+  System.out.println("모든 스레드 실행 완료");
+}
+```
+
+- [2 스레드 생성과 실행](https://chj-dev.github.io/posts/study-thread-2-2/#thread-%EA%B8%B0%EB%B3%B8-%EC%A7%80%EC%8B%9D) 에서 얘기했듯, 메인스레드는 기본적으로 호출한 스레드의 종료를 기다리지 않는다.
+- 하지만 위의 예시처럼 `join` 을 사용하면 **`join`을 호출한 스레드가 t1스레드가 종료(TERMINATED)될 때까지** 기다리는 상태가 된다.
+- 무기한 기다리는 **WAITING** 상태이다.
+
+### 일정 시간 동안만 join 할래
+
+```java
+public static void main(String[] args)  {
+  Thread t1 = new Thread(new MyTask(), "t1");
+  t1.start();
+  t1.join(1000);
+  System.out.println("모든 스레드 실행 완료");
+}
+```
+
+- 위와 같이 사용하면 1초 동안만 t1스레드가 종료되기를 기다리고 **해당 시간동안 종료되지 않으면 깨어나(RUNNABLE)** 본인의 다음 코드를 수행한다.
+- 일정 시간 동안만 기다리는 **TIME_WAITING** 상태이다.
