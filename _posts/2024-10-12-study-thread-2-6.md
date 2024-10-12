@@ -76,6 +76,7 @@ balance = balance - amount; //A 스레드 위치
 > 키워드 영역 안에 있는 변수에 volatile 을 사용하지 않아도 된다.
 > {: .prompt-info }
 
+   
 - 즉, 아래의 문제 해결이 가능하다.
 
 1. 경합 조건(Race condition)
