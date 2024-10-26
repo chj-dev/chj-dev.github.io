@@ -74,7 +74,7 @@ balance = balance - amount; //A 스레드 위치
 - synchronized 키워드를 사용하면 메모리 가시성 문제와 함께 동시성 문제를 해결할 수 있다.
 
 > 키워드 영역 안에 있는 변수에 volatile 을 사용하지 않아도 된다.
-> {: .prompt-info }
+{: .prompt-info }
 
    
 - 즉, 아래의 문제 해결이 가능하다.
