@@ -146,6 +146,7 @@ public boolean withdraw(int amount) {
 
 - synchronized 의 단점을 해결하기 위한 더 유연하고 세밀한 방법들이 필요하게 되었다.
 - 자바 1.5 부터 `java.util.concurrent` 라는 동시성 문제 해결을 위한 패키지가 추가되었다.
+- 바로 다음 내용에 정리하겠다.
 
 
 ## 참고자료
