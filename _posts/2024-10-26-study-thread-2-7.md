@@ -13,6 +13,7 @@ pin: true
 
 
 ## BLOCKED vs WAITING
+<hr />
 
 ### 인터럽트 발생 시
 
@@ -33,6 +34,7 @@ pin: true
 
 
 ## LockSupport
+<hr />
 
 ### 기능
 
@@ -54,6 +56,7 @@ pin: true
 
 
 ## ReentrantLock
+<hr />
 
 ### Lock 인터페이스
 

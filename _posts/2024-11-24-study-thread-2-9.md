@@ -13,6 +13,7 @@ pin: true
 
 
 ## Lock Condition
+<hr />
 
 ### 생산자가 생산자를 깨우고, 소비자가 소비자를 깨우는 비효율 문제를 어떻게 해결할까?
 
@@ -54,6 +55,7 @@ pin: true
   - ReentrantLock 을 가지고 있는 스레드가 호출해야 한다.
 
 ## 스레드의 대기
+<hr />
 
 ### synchronized 대기
 
@@ -88,6 +90,7 @@ pin: true
   - condition.signal() 호출했을 때 condition 객체의 스레드 대기 공간에서 빠져나감
 
 ## Blocking Queue
+<hr />
 
 - 생산자 소비자 문제를 위해 학습한 내용이 이미 BlockingQueue 라는 이름으로 구현되어 있다.
 

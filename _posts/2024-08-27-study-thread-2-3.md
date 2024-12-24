@@ -63,6 +63,7 @@ pin: true
 {: .prompt-warning }
 
 ## sleep 과 join
+<hr />
 
 ### 기다려, 하지만 누가? 어떻게? 얼마나?
 
