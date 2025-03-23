@@ -1,8 +1,8 @@
 ---
 title: 1 제네릭 (Generic) - 1
 date: 2025-03-23 13:32:00 +0900
-categories: [Study, Java-advanced1]
-tags: [study, java, thread, adv1]
+categories: [Study, Java-mid2]
+tags: [study, java, mid2]
 pin: true
 ---
 
