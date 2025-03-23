@@ -70,6 +70,10 @@ public class GenericTest<T> {
 ```
 - 위의 예시 중 `GenericTest<T>` 가 제네릭 타입이다.
 
+### 제네릭 메서드 (Generic Method)
+
+- 다음 내용에...
+
 ### 타입 매개변수 (Type Parameter)
 
 - 제네릭 타입이나 메서드에 사용되는 변수로, 실제 타입으로 대체된다.
