@@ -28,6 +28,7 @@ pin: true
 ### 타입 추론
 
 1. 메소드 파라미터에 넘겨진 인자들의 타입으로 타입 파라미터의 타입을 추론
+
 ```java
 public static <K, V> boolean methodName(K key, V value) {
     return true;
@@ -35,7 +36,9 @@ public static <K, V> boolean methodName(K key, V value) {
 boolean result = GenericMethods.<String, Integer>methodName("key", 3);
 boolean result = GenericMethods.methodName("key", 3);
 ```
+
 2. 메소드의 반환 타입으로 타입 파라미터의 타입을 추론
+
 ```java
 public static <T> List<T> emptyList() {
     return new ArrayList<T>();
@@ -50,6 +53,7 @@ List<Integer> list = GenericMethods.getList();
 
 - 특정 메서드 단위로 제네릭을 도입할 때 사용한다.
 - 메서드의 반환 타입 앞에 다이아몬드 기호를 사용하여 타입 매개변수를 적어서 사용한다.
+
 ```java
 public <T extends Integer> T genericMethod(T t) {}
 
@@ -61,6 +65,7 @@ GenericMethod.<Integer>genericMethod(1);
 - 제네릭 타입은 static 메서드에 타입 매개변수를 사용할 수 없다.
 - 제네릭 타입은 객체 생성 시점에 타입이 정해지지만, static 메서드는 인스턴스 단위가 아니라 클래스 단위로 동작하기 때문이다.
 - 따라서 static 메서드는 제네릭 메서드를 사용해서 적용해야 한다.
+
 ```java
 class GenericTest<T> {
   T instanceMethod(T t) {} //가능
@@ -117,6 +122,7 @@ class EraserTest<T> {
   }
 }
 ```
+
 - 타입 이레이저의 특징으로, 위 소스 코드는 런타임에 모두 `T`가 `Object`로 변하게 된다.
 - 따라서 instanceCheck 의 결과는 항상 참, create 는 항상 Object 를 생성하게 된다.
 - 개발자가 의도한 것과는 다르게 동작한다.

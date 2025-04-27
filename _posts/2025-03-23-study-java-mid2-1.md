@@ -52,6 +52,7 @@ pin: true
 
 - 클래스명 우측에 `<T>` 와 같이 선언하면 제네릭 클래스가 된다.
 - 여기서 `T` 는 타입 매개변수라 한다.
+
 ```java
 public class GenericTest<T> {
   
@@ -63,11 +64,13 @@ public class GenericTest<T> {
 - 클래스나 인터페이스를 정의할 때 타입 매개변수를 사용하는 것이다.
 - 제네릭 클래스, 제네릭 인터페이스 모두 제네릭 타입이다.
   - 타입은 클래스, 인터페이스, 기본형(int 등)을 말한다.
+
 ```java
 public class GenericTest<T> { 
   private T t;
 }
 ```
+
 - 위의 예시 중 `GenericTest<T>` 가 제네릭 타입이다.
 
 ### 제네릭 메서드 (Generic Method)
