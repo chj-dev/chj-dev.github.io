@@ -72,6 +72,7 @@ for (Integer value : values) {
 
 
 ## 스택 (Stack)
+<hr />
 
 - **LIFO, Last In First Out**
 - 값 넣기: `push`
@@ -83,6 +84,7 @@ for (Integer value : values) {
 
 
 ## 큐 (Queue)
+<hr />
 
 - **FIFO, First In First Out**
 - 값 넣기: `offer`
@@ -90,7 +92,7 @@ for (Integer value : values) {
 
 ### 인터페이스 구조
 
-- 최상위 인터페이스 `Collection`
+- 상위 인터페이스 `Collection`
 - 그 하위에 `Queue`
 - 그 하위에 `Deque`
 - Deque 하위에 `ArrayDeque` 와 `LinkedList` 를 가진다.
@@ -98,6 +100,7 @@ for (Integer value : values) {
 
 
 ## 데크 (Deque, Double Ended Queue)
+<hr />
 
 - 양쪽 끝에서 요소를 추가하거나 제거할 수 있음.
 - 일반적인 Queue 와 Stack 의 기능을 모두 포함.
